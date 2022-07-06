@@ -1,0 +1,1 @@
+This is the source code for the "Creating A Custom Asset Type With Its Own Editor In C++" tutorial over at https://dev.epicgames.com/community/learning/tutorials/vyKB/unreal-engine-creating-a-custom-asset-type-with-its-own-editor-in-c.
