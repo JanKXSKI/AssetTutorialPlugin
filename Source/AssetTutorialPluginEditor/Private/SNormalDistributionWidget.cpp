@@ -20,7 +20,7 @@ int32 SNormalDistributionWidget::OnPaint(const FPaintArgs& Args, const FGeometry
         const float X = PointIndex / (NumPoints - 1.0);
         const float D = (X - Mean.Get()) / StandardDeviation.Get();
         const float Y = FMath::Exp(-0.5f * D * D);
-        Points.Add(PointsTransform.TransformPoint({ X, Y }));
+        Points.Add(PointsTransform.TransformPoint(FVector2D(X, Y)));
     }
     FSlateDrawElement::MakeLines(OutDrawElements, LayerId, AllottedGeometry.ToPaintGeometry(), Points);
     return LayerId;
